@@ -1,0 +1,122 @@
+topic: ~main()
+
+concept:(where_is_the) [
+	"{"do you know"} where is the"
+	"where's the"
+	"I'm looking for the"
+	"{"[can could] you"} show me the"
+	"{"[can could] you"} point at the"
+	"{"[can could] you"} locate the"
+	the
+]
+
+proposal: %start
+^rand[
+	"Let me help you ^rand[find locate] the animals around me."
+	"Let's ^rand[find locate] the animals around me."
+	"We're going to ^rand[find locate] the animals around me."
+]
+^rand[
+	"Which one are you ^rand["looking for" "interested in"]?"
+	"Tell me which one you're ^rand["looking for" "interested in"]!"
+	"Please choose one!"
+]
+
+u:([
+	"{~where_is_the} dog"
+	"do you know where the dog is"
+]) %dog
+^rand[
+	"The dog is {really} close to me, on my left."
+	"The dog is on ^rand[the my] left, really close to me."
+	"The dog is close to me, right by my left hand."
+]
+
+u:([
+	"{~where_is_the} wolf"
+	"do you know where the wolf is"
+]) %wolf
+^rand[
+	"The wolf is right in front of me, a little bit ^rand[to on] ^rand[the my] left."
+	"The wolf is right in front of my left ^rand[hand wheel]."
+	"The wolf is really close to me, right in front of my left ^rand[hand wheel]."
+]
+
+u:([
+	"{~where_is_the} pig"
+	"do you know where the pig is"
+]) %pig
+^rand[
+	"The pig is on the right in front of me, really close."
+	"The pig is just in front of me, on ^rand[the my] right."
+	"The pig is close to me, 45 degrees in front and to ^rand[the my] right."
+]
+
+u:([
+	"{~where_is_the} cat"
+	"do you know where the cat is"
+]) %cat
+^rand[
+	"The cat is on the right behind me, really close."
+	"The cat is just behind me, on ^rand[the my] right."
+	"The cat is close to me, 45 degrees behind and to ^rand[the my] right."
+]
+
+u:([
+	"{~where_is_the} tiger"
+	"do you know where the tiger is"
+]) %tiger
+^rand[
+	"The tiger is in front of me, {just} a little {bit} further on ^rand[the my] right."
+	"The tiger is in front of me, {just} a little on ^rand[the my] right."
+	"The tiger is in front of my right ^rand[hand wheel], but a little {bit} further off."
+]
+
+u:([
+	"{~where_is_the} horse"
+	"do you know where the horse is"
+]) %horse
+^rand[
+	"The horse is far away from me, on ^rand[the my] right."
+	"The horse is far away on ^rand[the my] right."
+	"The horse is on ^rand[the my] right, far away from me."
+]
+
+u:([
+	"{~where_is_the} cow"
+	"do you know where the cow is"
+]) %cow
+^rand[
+	"The cow is behind me, far to the left."
+	"The cow is far away, on the left behind me."
+	"The cow is far away, behind me ^rand[to on] ^rand[the my] left."
+	"The cow is far away behind me, ^rand[to on] ^rand[the my] left."
+	"The cow is far away behind me, 45 degrees to ^rand[the my] left."
+	"The cow is far away {"from me"}, 45 degrees behind and to ^rand[the my] left."
+]
+
+u:([
+	"{~where_is_the} monkey"
+	"do you know where the monkey is"
+]) %monkey
+^rand[
+	"The monkey is in front of me, {but} far to the left."
+	"The monkey is far away, on the left in front of me."
+	"The monkey is far away, in front of me ^rand[to on] ^rand[the my] left."
+	"The monkey is far away in front of me, ^rand[to on] ^rand[the my] left."
+	"The monkey is far away in front of me, 45 degrees to ^rand[the my] left."
+	"The monkey is far away {"from me"}, 45 degrees in front and to ^rand[the my] left."
+]
+
+u:([
+    "where are you"
+    "where is Pepper"
+	"{~where_is_the} robot"
+	"do you know where you are"
+	"do you know where [Pepper "the robot"] is"
+]) %pepper
+^rand[
+    "I'm here!"
+    "Here I am!"
+	"Right here!"
+]

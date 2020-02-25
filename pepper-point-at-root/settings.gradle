@@ -1,0 +1,2 @@
+include ':sample-app', ':pepper-point-at'
+rootProject.name='Pepper Point at'
